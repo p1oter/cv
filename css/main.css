@@ -278,12 +278,14 @@ main {
 }
 
 .hobby-box {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 35%;
   height: 500px;
   margin: 30px;
   margin-bottom: 50px;
-  background-color: #f48c06;
-  color: #fff;
+  background-color: #fff;
+  border: 3px solid #f48c06;
   border-radius: 30px;
   overflow: hidden;
   -webkit-transition: -webkit-transform .3s;

@@ -146,13 +146,14 @@ main {
     // background-color: rgb(170, 124, 124);
 }
 .hobby-box {
+	box-sizing: content-box;
     width: 35%;
     height: 500px;
     margin: 30px;
     margin-bottom: 50px;
-    background-color: $main-c;
-    // border: 3px solid $main-c;
-    color: $main-bg;
+    background-color: $main-bg;
+    border: 3px solid $main-c;
+    // color: $main-bg;
     border-radius: 30px;
     overflow: hidden;
     transition: transform .3s;
