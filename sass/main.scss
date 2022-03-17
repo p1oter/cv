@@ -1,0 +1,170 @@
+@import './_animations';
+$main-c: #f48c06;
+$main-bg: #fff;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 60px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	background-color: #f7f7f7;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+h2 {
+    margin-bottom: 40px;
+    color: $main-c;
+	font-weight: normal;
+}
+.welcome {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background: $main-c;
+    color: $main-bg;
+	&__name {
+		margin-top: -4%;
+		font-size: 90px;
+		font-weight: 400;
+	}
+	&__main-info {
+		font-size: 30px;
+	}
+	&__arrow {
+		position: absolute;
+		bottom: 3%;
+		left: 0;
+		width: 100%;
+		padding: 15px;
+		font-size: 60px;
+		color: $main-bg;
+		animation: arrow-move 2s 3 both;
+        transition: font-size .3s;
+        &:hover {
+            font-size: 70px;
+            animation-play-state: paused;
+        }
+	}
+    h2 {
+        color: $main-bg;
+    }
+}
+main {
+	margin-top: 150px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 0 auto;
+	width: 80%;
+	// background-color: rgb(226, 134, 134);
+    border-left: 8px solid $main-c;
+	box-shadow: 6px -6px 20px rgb(166, 166, 166);
+}
+.text-box {
+	width: 60%;
+	height: 100%;
+	// margin: 0px auto;
+	padding: 100px 0;
+	p {
+		font-size: 25px;
+	}
+	.second-col {
+		margin-left: 20%;
+	}
+	.col {
+		max-width: 350px;
+		// background-color: rgb(192, 103, 103);
+		p:nth-child(2n),
+		li {
+			margin-bottom: 50px;
+			font-size: 20px;
+		}
+        li {
+            margin-bottom: 5px;
+        }
+	}
+}
+.info-box {
+	display: flex;
+	justify-content: start;
+	ul {
+		margin-top: -45px;
+		margin-left: 30px;
+	}
+	li {
+		margin-bottom: 5px;
+	}
+}
+.section-title {
+	margin-top: 110px;
+}
+.skill-box {
+	display: flex;
+	justify-content: start;
+    margin-bottom: 35px;
+	// background-color: rgb(221, 112, 112);
+	.first {
+		display: block;
+		width: 50%;
+		margin-right: 30px;
+        padding-right: 20px;
+		// border-right: 5px solid #e1e1e1;
+		border-right: 5px solid $main-c;
+		// background-color: rgb(197, 168, 168);
+		p {
+			color: gray;
+		}
+	}
+    .second {
+        width: 50%;
+    }
+	.second p {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.hobby-box {
+    width: 35%;
+    height: 100%;
+    margin: 30px;
+    margin-bottom: 50px;
+    background-color: $main-c;
+    // border: 3px solid $main-c;
+    color: $main-bg;
+    border-radius: 30px;
+    overflow: hidden;
+    p {
+        padding: 20px 0;
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+    }
+}
+.first-row p {
+    margin-top: 0;
+}
